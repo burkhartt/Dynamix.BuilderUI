@@ -39,10 +39,24 @@ module.exports = (grunt) ->
         src: '**/*.coffee'
         filter: isModified
 
+    handlebars:
+      all:
+        options:
+          namespace: false
+          amd: false
+        files:
+          "js/templates.js": ["Scripts/**/*.hbs"]
+
+    uglify:
+      my_target:
+        files:
+          'js/dynamixui.min.js': ['js/compiled/*.js']
+   
+
     watch:
       coffeescript:
-        files: ['Scripts/**/*.coffee']
-        tasks: ['coffeelint:modified', 'coffee:modified']
+        files: ['Scripts/**/*.coffee', 'Scripts/**/*.hbs']
+        tasks: ['coffeelint:modified', 'coffee:modified', 'handlebars', 'uglify']
 
     connect:
       server:
@@ -50,10 +64,14 @@ module.exports = (grunt) ->
           port: 9001
           base: '.'
 
+    
+
   grunt.loadNpmTasks 'grunt-coffeelint'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-connect'
+  grunt.loadNpmTasks 'grunt-contrib-handlebars'
+  grunt.loadNpmTasks 'grunt-contrib-uglify'
 
   grunt.registerTask 'default', ['coffeelint:all', 'coffee:all', 'watch']
   grunt.registerTask 'server', ['connect:server:keepalive']

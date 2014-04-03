@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "buttons.js",
+  "sourceRoot": "../../Scripts/coffee/",
+  "sources": [
+    "buttons.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAA,iBAAA;EAAA;iSAAA;;AAAA;sBACE;;AAAA,mBAAA,MAAA,GAAO,SAAA,GAAA,CAAP,CAAA;;gBAAA;;IADF,CAAA;;AAAA;AAIE,8BAAA,CAAA;;;;GAAA;;AAAA,sBAAA,OAAA,GAAS,SAAA,GAAA;WACP,KAAA,CAAM,IAAN,EADO;EAAA,CAAT,CAAA;;AAAA,sBAGA,MAAA,GAAQ,SAAA,GAAA;WACN,KAAA,CAAM,IAAN,EADM;EAAA,CAHR,CAAA;;mBAAA;;GADsB,OAHxB,CAAA"
+}
