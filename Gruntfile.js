@@ -49,10 +49,15 @@
         }
       },
       handlebars: {
-        all: {
+        compile: {
           options: {
-            namespace: false,
-            amd: false
+            namespace: "Templates",
+            processName: function(filePath) {
+              var fileName, pieces;
+              pieces = filePath.split("/");
+              fileName = pieces[pieces.length - 1];
+              return fileName.substring(0, fileName.length - 4);
+            }
           },
           files: {
             "js/templates.js": ["Scripts/**/*.hbs"]
@@ -60,6 +65,9 @@
         }
       },
       uglify: {
+        options: {
+          mangle: false
+        },
         my_target: {
           files: {
             'js/dynamixui.min.js': ['js/compiled/*.js']

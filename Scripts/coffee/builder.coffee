@@ -3,14 +3,13 @@ class ClassSchema
   attributes: []
 
   constructor: ->
-  	@name = "Untitled"
-  	@attributes = []
-
+    this.name = "Untitled"
+    
   add_attribute: (name) ->
-    @attributes.push(name)  
+    this.attributes.push(name)
 
   set_name: (name) ->
-    @name = name
+    this.name = name
 
   compile: ->
-  	JSON.stringify(this)
+    JSON.stringify(this)

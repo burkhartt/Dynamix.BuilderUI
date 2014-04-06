@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "newbutton.js",
+  "sourceRoot": "../../../Scripts/coffee/buttons/",
+  "sources": [
+    "newbutton.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAA,SAAA;EAAA;iSAAA;;AAAA;AACE,8BAAA,CAAA;;;;GAAA;;AAAA,sBAAA,OAAA,GAAS,SAAA,GAAA;WACP,KAAA,CAAM,IAAN,EADO;EAAA,CAAT,CAAA;;mBAAA;;GADsB,YAAxB,CAAA"
+}

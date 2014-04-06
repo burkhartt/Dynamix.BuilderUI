@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "_uicomponent.js",
+  "sourceRoot": "../../Scripts/coffee/",
+  "sources": [
+    "_uicomponent.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAA,WAAA;;AAAA;2BACE;;AAAA,wBAAA,WAAA,GAAa,IAAb,CAAA;;AAAA,wBACA,MAAA,GAAQ,SAAA,GAAA;WACN,IAAI,CAAC,WAAW,CAAC,IAAjB,CAAsB,SAAU,CAAA,IAAC,CAAA,WAAW,CAAC,IAAb,CAAV,CAAA,CAAtB,EADM;EAAA,CADR,CAAA;;qBAAA;;IADF,CAAA"
+}

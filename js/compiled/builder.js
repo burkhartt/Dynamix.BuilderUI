@@ -7,7 +7,6 @@ ClassSchema = (function() {
 
   function ClassSchema() {
     this.name = "Untitled";
-    this.attributes = [];
   }
 
   ClassSchema.prototype.add_attribute = function(name) {

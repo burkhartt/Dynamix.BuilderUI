@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "buttons.js",
+  "sourceRoot": "../../../Scripts/coffee/buttons/",
+  "sources": [
+    "buttons.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAA,MAAA;;AAAA;sBAAA;;gBAAA;;IAAA,CAAA"
+}
